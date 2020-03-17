@@ -108,4 +108,18 @@ Below is an example of a few lines of what the data in a log file, 2018-11-12-ev
     *  Run `test.ipynb` to verify the results.
 
 ***
+
+## Changelog
+1.  Updated table definitions to identify primary key column.
+2.  Updated table definitions to set foreign key columns to not null.
+3.  Created check constraint on level column to only accept 'paid' or 'free'.
+4.  Created a PostgreSQL UPSERT, e.g. ON CONFLICT, to update users.level on an user_id INSERT conflict.
+5.  Create foreign key constraints for selected columns in table songplays.
+6.  Updated the datatype for the user_id column from INT to the preferred VARCHAR.
+7.  Updated the datatype for the start_time column from NUMERIC to the preferred TIMESTAMP.
+8.  Added SQL `SELECT user_id, count(*) FROM users GROUP BY user_id HAVING count(*) > 1` to `test.ipynb` to ensure there are no duplicate user_id's.  For example, one user_id with a *free* level and *paid* level.
+9.  Added SQL to verify table constraints created.
+
+
+***
 ###### Udacity's Data Engineering Project:  Data Modeling with Postgres
