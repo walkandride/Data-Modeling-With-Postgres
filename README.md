@@ -1,3 +1,5 @@
+In this project, you’ll model user activity data for a music streaming app called Sparkify. You’ll create a relational database and ETL pipeline designed to optimize queries for understanding what songs users are listening to. In PostgreSQL you will also define Fact and Dimension tables and insert data into your new tables.
+
 # Introduction
 The Sparkify analytics team wants to understand what songs users are listening to.  Unfortunately there is no easy way to do so since this information is stored as JSON log files on the file system.
 
